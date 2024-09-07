@@ -28,7 +28,7 @@ li{
     padding-bottom: 10px;
 }
 .sidebar,.navbar,.projects,.announcements,.trending{
-    border: .2px solid black;
+    border: .1px solid black;
 }
 /* main container design */
 .container{
@@ -46,22 +46,67 @@ li{
     
 }
 .dashboard h3{
-    font-size: 35px;
+    font-size: 32px;
     padding-bottom: 100px;
     padding-top: 40px;
-    font-weight: 800;
+    font-weight: 700;
 }
 /* navbar */
 .navbar{
     grid-column: 2/4;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    /* grid-row-gap: 20px; */
+    /* margin-bottom: 20px; */
+    gap: 10px;
+
+}
+.name{
+    align-self: center;
+    justify-self: center;
+    
+}
+.name h5{
+    padding-left: 0px;
+    font-size: 11px;
+    font-weight: 700;
+}
+.name h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+.upload{
+    align-self: center;
+    justify-self: center;
+    
+}
+.upload button{
+    margin-left: 80px;
+    padding: 6px 16px;
+    border: none;
+    color: white;
+    background-color:  #3b0086;
+    border-radius: 12px;
+    font-size: 16px;
 }
 /* projects */
 .projects{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-row: 2/4;
-    gap: 15px;
+    gap: 5px;
+    background-color: rgb(202, 202, 202);
 }
-.projects .card{
-    height: 200px;
+.projects .project-card{
+    height: 220px;
+    background-color: white;
+    margin: 10px;
+    
+}
+.project-card p{
+    padding: 10px;
+}
+.title{
+    font-size: 18px;
+    font-weight: 700;
 }
