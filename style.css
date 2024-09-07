@@ -27,9 +27,7 @@ li{
     font-weight: 600;
     padding-bottom: 10px;
 }
-.sidebar,.navbar,.projects,.announcements,.trending{
-    border: .1px solid black;
-}
+
 /* main container design */
 .container{
     display: grid;
@@ -101,6 +99,10 @@ li{
     height: 220px;
     background-color: white;
     margin: 10px;
+    box-shadow: 3px 3px 5px gray;
+    /* align-self: center;
+    justify-self:  center; */
+    border-left: 7px solid #4c4c9d;
     
 }
 .project-card p{
@@ -109,4 +111,35 @@ li{
 .title{
     font-size: 18px;
     font-weight: 700;
+}
+/* announcements */
+.announcements{
+    /* margin: 10px; */
+    /* padding: 10px; */
+    background-color: rgb(202, 202, 202);
+}
+
+.announcement-card{
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 3px 3px 5px gray;
+}
+.announcement-card h5{
+    font-weight: 600;
+    font-size: 15px;
+}
+/* trending */
+.trending{
+    background-color: rgb(202, 202, 202);
+}
+.trending-card{
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 3px 3px 5px gray;
+}
+.trending-card h5{
+    font-weight: 600;
+    font-size: 15px;
 }
